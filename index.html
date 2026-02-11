@@ -1,0 +1,23 @@
+<!DOCTYPE html> <html lang="en">
+     <head> <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>PDF Summarizer - AI Powered</title> 
+        <!-- Link to CSS file -->
+          <link rel="stylesheet" href="style.css"> </head> <body> <div class="container">
+             <!-- Header --> 
+              <h1>📄 PDF Summarizer</h1> 
+              <p class="subtitle">Upload your PDF and get an AI-powered summary instantly</p>
+               <!-- Upload Section --> <div class="upload-section"> <!-- File input --> 
+                  
+                <input type="file" id="pdfFile" accept=".pdf" class="file-input"> 
+                <!-- Upload button --> <button id="uploadBtn" onclick="uploadPDF()" class="btn-primary"> Summarize PDF </button>
+                 </div> <!-- Status messages -->
+                  <div id="status" class="status"></div> <!-- Result section (hidden initially) --> 
+                  <div id="result" class="result hidden">
+                     <h2>✅ Summary Ready!</h2>
+                      <button id="downloadBtn" class="btn-success"> 📥 Download Summary PDF </button> 
+                    </div> 
+                </div> <!-- Link to JavaScript file --> 
+                <script src="script.js"></script> 
+            </body>
+             </html>

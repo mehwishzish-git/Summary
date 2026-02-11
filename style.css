@@ -1,0 +1,16 @@
+/* Reset and base styles */ * { margin: 0; padding: 0; box-sizing: border-box; } 
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; } /* Main container */ 
+.container { background: white; padding: 50px; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); max-width: 600px; width: 100%; text-align: center; } /* Header styles */ 
+h1 { color: #333; font-size: 2.5em; margin-bottom: 10px; } .subtitle { color: #666; font-size: 1.1em; margin-bottom: 40px; } /* Upload section */ 
+.upload-section { margin-bottom: 30px; } /* File input */ .file-input { display: block; margin: 20px auto; padding: 10px; border: 2px dashed #667eea; border-radius: 8px; cursor: pointer; width: 100%; font-size: 1em; } /* Buttons */
+ .btn-primary { background: #667eea; color: white; border: none; padding: 15px 40px; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: all 0.3s; font-weight: 600; } 
+ .btn-primary:hover { background: #5568d3; transform: scale(1.05); } 
+ .btn-primary:disabled { background: #ccc; cursor: not-allowed; transform: scale(1); } 
+ .btn-success { background: #28a745; color: white; border: none; padding: 15px 40px; border-radius: 8px; font-size: 1.1em; cursor: pointer; transition: all 0.3s; font-weight: 600; } 
+ .btn-success:hover { background: #218838; transform: scale(1.05); } /* Status messages */ 
+ .status { margin: 20px 0; padding: 15px; border-radius: 8px; font-weight: 600; } 
+ .status.loading { background: #fff3cd; color: #856404; } 
+ .status.success { background: #d4edda; color: #155724; } 
+ .status.error { background: #f8d7da; color: #721c24; } /* Result section */ 
+ .result { margin-top: 30px; padding: 30px; background: #f8f9fa; border-radius: 12px; } 
+ .result.hidden { display: none; } .result h2 { color: #28a745; margin-bottom: 20px; }
